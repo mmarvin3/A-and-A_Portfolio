@@ -1,8 +1,12 @@
 import React from 'react'
+import HeaderNav from '../HeaderNav'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <HeaderNav />
+      <p>About</p>
+    </div>
   )
 }
 

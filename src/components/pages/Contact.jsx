@@ -1,8 +1,12 @@
 import React from 'react'
+import HeaderNav from '../HeaderNav'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <HeaderNav/>
+      Contact
+    </div>
   )
 }
 

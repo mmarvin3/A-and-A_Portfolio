@@ -1,8 +1,12 @@
 import React from 'react'
+import HeaderNav from '../HeaderNav'
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div>
+      <HeaderNav/>
+      Projects
+    </div>
   )
 }
 

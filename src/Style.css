@@ -1,0 +1,4 @@
+.headerNav{
+    display: flex;
+    flex-direction: row;
+}
