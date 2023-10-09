@@ -6,10 +6,16 @@ import { Link } from 'react-router-dom'
 function HeaderNav() {
   return (
     <div className='headerNav'>
-        <Link to="/"><p>Home</p></Link>
-        <Link to="/about"><p>About</p></Link>
-        <Link to="/projects"><p>Projects</p></Link>
-        <Link to="/contact"><p>Contact</p></Link>
+      <nav >
+        <div class="nav">
+          <span class="nav-item">
+            <Link to="/" class="nav-link active"><p>Home</p></Link>
+            <Link to="/about" class="nav-link active"><p>About</p></Link>
+            <Link to="/projects" class="nav-link active"><p>Projects</p></Link>
+            <Link to="/contact" class="nav-link active"><p>Contact</p></Link>
+          </span>
+        </div>
+      </nav>
     </div>
   )
 }
