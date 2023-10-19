@@ -2,6 +2,7 @@
 // import { Button } from "@mui/material";
 import React from "react";
 import { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const contactInfo = []
 
@@ -23,11 +24,15 @@ const ContactForm = () => {
 
         setSubmissionName(firstName)
 
-        // const formData = new FormData(form.current)
 
-        // const formJSON = Object.fromEntries(formData.entries())
-        // console.log(formJSON)
-    }
+        // Need to update the following with keys
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
 
     return (
         <div>
