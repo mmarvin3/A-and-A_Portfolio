@@ -1,10 +1,10 @@
 import React from 'react'
-import HeaderNav from '../HeaderNav'
+import Header from '../pages-components/Header'
 
 const About = () => {
   return (
     <div>
-      <HeaderNav />
+      <Header/>
       <p>About</p>
     </div>
   )

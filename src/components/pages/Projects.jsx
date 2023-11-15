@@ -1,10 +1,10 @@
 import React from 'react'
-import HeaderNav from '../HeaderNav'
+import Header from '../pages-components/Header'
 
 const Projects = () => {
   return (
     <div>
-      <HeaderNav/>
+      <Header/>
       Projects
     </div>
   )
